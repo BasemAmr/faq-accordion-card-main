@@ -1,0 +1,41 @@
+// Including Google font
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 100% - (100 - (12 / 16 * 100));
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    @include gradient(top, $bg-gradient);
+    background-repeat: no-repeat;
+    font: {
+        size: 12px;
+        family: 'Kumbh Sans', sans-serif;
+    }
+    @include landscape {
+        min-height: 100vh;
+        background-size: 100vw 150vh;
+        overflow-x: hidden;
+    }
+}
+.question {
+    color: $very-dark-grayish-blue;
+}
+.question:hover {
+    color: $soft-red;
+}
+.answer {
+    color: $dark-grayish-blue;
+}
+.active-faq-box .question, .heading {
+    color: $very-dark-desaturated-blue;
+}
+
+

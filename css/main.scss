@@ -1,0 +1,28 @@
+// Variables file
+@import "./abstracts/variables";
+
+// Placeholders file
+@import "./abstracts/placeholders";
+
+// Mixins file
+@import "./abstracts/mixins";
+
+// Global rules file
+@import "./abstracts/global-rules";
+
+
+////////////////////////
+////// Components //////
+////////////////////////
+
+// Card file [Parent element]
+@import "./components/card";
+
+// Illustraion background
+@import "./components/illustrationBox";
+
+// Question section
+@import "./components/questions-section";
+
+// Attributions [Footer, not in the card]
+@import "./components/attributions";

@@ -1,0 +1,31 @@
+// Start styling the card
+.card {
+    width: 70%;
+    min-height: 60%;
+    max-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 20px 30px hsla(238, 29%, 16%, 0.5);
+    -webkit-box-shadow: 0 20px 30px hsla(238, 29%, 16%, 0.5);
+    -moz-box-shadow: 0 20px 30px hsla(238, 29%, 16%, 0.5);
+    -ms-box-shadow: 0 20px 30px hsla(238, 29%, 16%, 0.5);
+    -o-box-shadow: 0 20px 30px hsla(238, 29%, 16%, 0.5);
+    @include transform-it(20%, 25%);
+    @include b-radius(1rem, 1rem, 1rem, 1rem);
+    @include responsive {
+        width: 90%;
+        min-height: 75%;
+        @include transform-it(5%, 25%);
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    @include landscape {
+        width: 85%;
+        height: 110vh;
+        @include transform-it(7.5%, 10%);
+        flex-direction: row-reverse;
+        justify-content: end;
+    }
+}

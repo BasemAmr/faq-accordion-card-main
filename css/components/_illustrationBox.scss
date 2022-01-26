@@ -1,0 +1,37 @@
+// SVG background
+.illustration {
+    @include sections-sizes(60vh, 35vw);
+    // These measurements are not accurate, they are based on experimenting
+    background: -25vw -35vh/50vw 110vh url(../images/bg-pattern-desktop.svg) no-repeat, -5vw 6vh/30vw 46vh url(../images/illustration-woman-online-desktop.svg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    &::after {
+        content: "";
+        height: 60vh;
+        width: 35vw;
+        position: absolute;
+        top: 0vh;
+        left: -5vw;
+        background: -1vw 24vh/13vw 22vh url(../images/illustration-box-desktop.svg) no-repeat;
+        @extend %transition;
+    }
+    &.active-animation::after {
+        left: -8vw;
+    }
+    @include responsive {
+        background: center 17vh/ 14rem 6.5rem url(../images/bg-pattern-mobile.svg) no-repeat, center / 14rem 12rem url(../images/illustration-woman-online-mobile.svg) no-repeat;
+        height: 30vh;
+        width: 90vw;
+        top: -17vh;
+        &::after {
+            position: static;
+        }
+    }        
+    @include landscape {
+        @include sections-sizes(110vh, 35vw);
+        background: 4vw 49vh/12rem 5rem url(../images/bg-pattern-mobile.svg) no-repeat, 4vw 30vh/12rem 10rem url(../images/illustration-woman-online-mobile.svg) no-repeat;
+        top: 0;
+    }
+}

@@ -1,0 +1,52 @@
+// Body gradient background maker
+@mixin gradient($position, $colors-list...) {
+    background-image: -webkit-linear-gradient($position, $colors-list);
+    background-image: -moz-linear-gradient($position, $colors-list);
+    background-image: -ms-linear-gradient($position, $colors-list);
+    background-image: -o-linear-gradient($position, $colors-list);
+    background-image: linear-gradient($position, $colors-list); 
+}
+
+// Making border radius
+@mixin b-radius($top, $right, $bottom, $left) {
+    border-radius: $top $right $bottom $left;
+    -webkit-border-radius: $top $right $bottom $left;
+    -moz-border-radius: $top $right $bottom $left;
+    -ms-border-radius: $top $right $bottom $left;
+    -o-border-radius: $top $right $bottom $left;
+}
+
+// Responsive layout mixin
+@mixin responsive() {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin landscape() {
+    @media (max-width: 767px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+// Width N Height for both the sections
+@mixin sections-sizes($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+// Control padding & width of flex items in the FAQs section
+@mixin control-wpm ($width, $padding-right, $margin) {
+    width: $width;
+    padding-right: $padding-right;
+    margin: $margin;
+}
+
+// Transform translate with prefixes
+@mixin transform-it ($x, $y) {
+    transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+}
