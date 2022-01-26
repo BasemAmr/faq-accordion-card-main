@@ -14,6 +14,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -27,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://i.ibb.co/L1LKkrm/screenshot.png)
+![](https://i.ibb.co/WKgd2xP/screenshot.png)
 
 ### Links
 
@@ -64,3 +65,6 @@ I'll continue learning more about SASS to use it in my next challenges
 - Website - [Basem Amr](https://basemamr.github.io/homepage/)
 - Frontend Mentor - [@BasemAmr](https://www.frontendmentor.io/profile/BasemAmr)
 
+## Acknowledgments
+
+I'm really grateful for @grace-snow and @vanzasetia, for their feedback on my first attempt, thank you!
