@@ -25,9 +25,9 @@ body {
   background-repeat: no-repeat;
   font-size: 12px;
   font-family: 'Kumbh Sans', sans-serif; }
-  @media (max-width: 767px) and (orientation: landscape) {
+  @media (max-width: 767px) {
     body {
-      min-height: 100vh;
+      min-height: 110vh;
       background-size: 100vw 150vh;
       overflow-x: hidden; } }
 
@@ -204,6 +204,10 @@ body {
   -moz-transform: translate(0, 20vh);
   -ms-transform: translate(0, 20vh);
   -o-transform: translate(0, 20vh);
-  padding: 0 0 2rem 0; }
+  padding: 3rem 0;
+  font-family: 'Courier New', Courier, monospace; }
+
+.attribution a {
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

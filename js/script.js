@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // getting needed elements
     let questionElements = document.querySelectorAll(".question");
     let illustrationBox= document.querySelector(".illustration");
+
     // turning it into an array
     questionElements = Array.prototype.slice.call(questionElements);
 
@@ -18,15 +19,18 @@ document.addEventListener("DOMContentLoaded", () => {
             if (clicked_id == questionElements.indexOf(e.target)) {
                 parentBox.classList.remove("active-faq-box");
                 illustrationBox.classList.remove("active-animation");
+                e.target.setAttribute("aria-expanded", "false");
                 clicked_id = null;
             } else {
                 // Remove active class from last clicked element
                 if (clicked_id == null) {} else {
                     questionElements[clicked_id].parentNode.classList.remove("active-faq-box");
+                    questionElements[clicked_id].setAttribute("aria-expanded", "false");
                 }
 
                 // Adding active class, updating the id
                 parentBox.classList.add("active-faq-box");
+                e.target.setAttribute("aria-expanded", "true");
                 illustrationBox.classList.add("active-animation");
                 clicked_id = questionElements.indexOf(e.target);
             }

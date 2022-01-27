@@ -19,8 +19,8 @@ body {
         size: 12px;
         family: 'Kumbh Sans', sans-serif;
     }
-    @include landscape {
-        min-height: 100vh;
+    @include responsive {
+        min-height: 110vh;
         background-size: 100vw 150vh;
         overflow-x: hidden;
     }
